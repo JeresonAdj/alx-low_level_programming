@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * Description: 'to print numbers in base 10'
- * Return : Always 0
+ * main-printing all numbers less than 10
+ * Return:Success 0
  */
 int main(void)
 {
