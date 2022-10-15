@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
- * main - lower case followed by new line
- * Return : 0
+ * main- Entry point
+ * Description: 'priting in lower case'
+ * Return: 0
  */
+
 int main(void)
 {
 	char lal;

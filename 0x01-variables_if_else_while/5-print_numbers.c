@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - prints all strings in numbers from 0 to 9
+ * main - Entry point
+ * Description: 'to print numbers in base 10'
  * Return : Always 0
  */
 int main(void)
