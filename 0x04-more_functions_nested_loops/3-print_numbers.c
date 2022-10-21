@@ -1,12 +1,17 @@
-#include "main.h"
+"#include "main.h"
 
 /**
- * mul - a function that multiplies two integers
- * @a: first input
- * @b: second input
- * Return: multiplication result of the 2 inputs
+ * print_numbers - prints 0123456789\n
+ *
+ * Return: void
  */
-int mul(int a, int b)
+void print_numbers(void)
 {
-	return (a * b);
+	char c;
+
+	for (c = '0'; c <= '9'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
