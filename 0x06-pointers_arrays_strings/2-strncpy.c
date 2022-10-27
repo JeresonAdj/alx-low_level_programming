@@ -1,25 +1,26 @@
-#include "main.h"                                                                           
-                                                                                            
-/**                                                                                         
- * _strcmp - compares two strings values                                                    
- * @s1: string 1                                                                            
- * @s2: string 2                                                                            
- * Return: difference between s1 and s2                                                     
- */                                                                                         
-int _strcmp(char *s1, char *s2)                                                             
-{                                                                                           
-        int i;                                                                              
-                                                                                            
-        i = 0;                                                                              
-        while (s1[i] != '\0' && s2[i] != '\0')                                              
-        {                                                                                   
-                if (s1[i] != s2[i])                                                         
-                {                                                                           
-                        return (s1[i] - s2[i]);                                             
-                }                                                                           
-                i++;                                                                        
-        }                                                                                   
-        return (0);                                                                         
-}                                                                                           
-~                                                                                           
-~
+#include "main.h"
+
+/**
+ * _strncpy - Copies at most an inputted number
+ *            of bytes from string src into dest.
+ * @dest: The buffer storing the string copy.
+ * @src: The source string.
+ * @n: The maximum number of bytes to copied from src.
+ *
+ * Return: A pointer to the resulting string dest.
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	int index = 0, src_len = 0;
+
+	while (src[index++])
+		src_len++;
+
+	for (index = 0; src[index] && index < n; index++)
+		dest[index] = src[index];
+
+	for (index = src_len; index < n; index++)
+		dest[index] = '\0';
+
+	return (dest);
+}
