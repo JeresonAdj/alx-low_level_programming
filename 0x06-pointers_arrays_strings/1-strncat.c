@@ -1,29 +1,29 @@
-#include "main.h"                                                                           
-                                                                                            
-/**                                                                                         
- * _strncat - joins two strings with n bytes                                                
- * @dest: copy to                                                                           
- *@src: copy from                                                                           
- * @n: number of char to be copied                                                          
- * Return: dest                                                                             
- */                                                                                         
-char *_strncat(char *dest, char *src, int n)                                                
-{                                                                                           
-        int i;                                                                              
-        int x;                                                                              
-                                                                                            
-        i = 0;                                                                              
-        while (dest[i] != '\0')                                                             
-        {                                                                                   
-                i++;                                                                        
-        }                                                                                   
-        x = 0;                                                                              
-        while (x < n && src[x] != '\0')                                                     
-        {                                                                                   
-                dest[i] = src[x];                                                           
-                i++;                                                                        
-                x++;                                                                        
-        }                                                                                   
-        dest[i] = '\0';                                                                     
-        return (dest);                                                                      
-}                                                            
+#include "main.h"
+
+/**
+ * _strcat - concantenates strings
+ * @dest: copy to
+ * @src: copy from
+ * Return: pointer 
+ */
+char *_strcat(char *dest, char *src)
+{
+	int x;
+	int y;
+
+	x = 0;
+	while (dest[x] != '\0')
+	{
+		x++;
+	}
+	y = 0;
+	while (src[y] != '\0')
+	{
+		dest[i] = src[y];
+		x++;
+		y++;
+	}
+	dest[1] = '\0';
+	return (dest);
+}
+
