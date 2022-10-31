@@ -1,6 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/**
+ * File: holberton.h
+ * Auth: Firdaus
+ * Desc: Header file containing prototypes for all functions
+ *       used in the 0x07-pointers_arrays_strings directory.
+ */
 
 #include <stddef.h>
 
@@ -16,4 +22,3 @@ void print_diagsums(int *a, int size);
 void set_string(char **s, char *to);
 
 #endif
-
